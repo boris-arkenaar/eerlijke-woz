@@ -1,7 +1,11 @@
-import { ChangeEvent, FC, useState } from "react";
+import { useRouter } from "next/router";
+import { ChangeEvent, FC, useContext, useState } from "react";
+import { AppContext } from "./app-state";
 import { Address, useAddressLookup } from "./use-address-lookup";
 
 const Address: FC = () => {
+  const { address, setAddress } = useContext(AppContext);
+  const router = useRouter();
   const [value, setValue] = useState("");
   const { addresses, isLoading, isError } = useAddressLookup(value);
 
@@ -9,8 +13,10 @@ const Address: FC = () => {
     setValue(event.target.value);
   };
 
-  const onAddressClick = (address: Address) => () => {
-    console.log("address", address);
+  const onAddressClick = (newAddress: Address) => () => {
+    console.log("address", newAddress);
+    setAddress(newAddress);
+    router.push("/confirmation");
   };
 
   const onNextClick = () => {
