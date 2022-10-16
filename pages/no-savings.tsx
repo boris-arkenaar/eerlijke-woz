@@ -10,18 +10,17 @@ const NoSavingsPage: NextPage = () => {
     <Container>
       <>
         <h1>Uw WOZ-waarde is waarschijnlijk niet te hoog</h1>
-        <table className="w-full">
-          <tbody>
-            <tr>
-              <td>Huidige WOZ-waarde</td>
-              <td>{woz * 1000}</td>
-            </tr>
-            <tr>
-              <td>Eerlijke WOZ-waarde</td>
-              <td>{ewoz * 1000}</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2>WOZ-waarde</h2>
+        <div className="w-full bg-neutral-200 rounded p-2">
+          <div className="flex justify-between p-2">
+            <span>Huidige WOZ-waarde</span>
+            <span>€ {(woz * 1000).toLocaleString("nl")}</span>
+          </div>
+          <div className="flex justify-between p-2">
+            <span>Eerlijke WOZ-waarde</span>
+            <span>€ {(ewoz * 1000).toLocaleString("nl")}</span>
+          </div>
+        </div>
       </>
     </Container>
   );
