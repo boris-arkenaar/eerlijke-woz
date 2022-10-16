@@ -1,4 +1,6 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { AppContext } from "./app-state";
+import Business from "./business";
 import Header from "./header";
 import Steps from "./steps";
 
@@ -7,6 +9,8 @@ type Props = {
 };
 
 const Container: FC<Props> = ({ children }) => {
+  const { showBusiness } = useContext(AppContext);
+
   return (
     <div className="bg-sky-200 h-screen">
       <Header />
@@ -16,6 +20,7 @@ const Container: FC<Props> = ({ children }) => {
           {children}
         </div>
       </div>
+      {showBusiness && <Business />}
     </div>
   );
 };
