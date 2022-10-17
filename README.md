@@ -24,10 +24,12 @@ Possible improvements which I would love to do, but didn't have time for in the 
 
 - Use Emotion.js in combination with Tailwind for better readability.
 - Include SVG images for icons and logos.
-- Finish the header and the steps component.
+- Finish the header component.
+- Make the steps component more generic and flexible, with visible state.
 - Make the design compatible with mobile devices.
 - Make the address suggestion dropdown usable with keyboard.
 - Improve the accessability of the whole app.
 - Extract styled elements that appear more than once, into their own component.
 - Finish styling of the savings and no-savings component.
 - Finish styling and functionality of the business step modal.
+- Implement loading and error states.
