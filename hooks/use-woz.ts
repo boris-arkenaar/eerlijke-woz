@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDebounce } from "usehooks-ts";
-import { Address } from "./use-address-lookup";
+import { Address } from "../types/address";
 
 type Data = {
   woz: number;

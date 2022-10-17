@@ -1,5 +1,5 @@
 import { createContext, Dispatch, FC, SetStateAction, useState } from "react";
-import { Address } from "./use-address-lookup";
+import { Address } from "../types/address";
 
 type AppState = {
   address: Address | null;

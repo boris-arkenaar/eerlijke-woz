@@ -1,9 +1,10 @@
 import { useRouter } from "next/router";
 import { ChangeEvent, useContext, useState } from "react";
 import { AppContext } from "../components/app-state";
-import { Address, useAddressLookup } from "../components/use-address-lookup";
+import { useAddressLookup } from "../hooks/use-address-lookup";
 import Container from "../components/container";
 import { NextPage } from "next";
+import { Address } from "../types/address";
 
 const StartPage: NextPage = () => {
   const { setAddress } = useContext(AppContext);

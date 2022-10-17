@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../components/app-state";
-import { useWoz } from "../components/use-woz";
+import { useWoz } from "../hooks/use-woz";
 import type { NextPage } from "next";
 import Container from "../components/container";
 

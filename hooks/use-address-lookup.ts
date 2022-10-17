@@ -1,17 +1,7 @@
 import { useEffect } from "react";
 import useSWR from "swr";
 import { useDebounce } from "usehooks-ts";
-
-export type Address = {
-  id: number;
-  woonplaats: string;
-  postcode: string;
-  huisnummer: number;
-  huisletter: string;
-  huisnummertoevoeging: string;
-  openbareruimte: string;
-  gebruiksdoel: "woonfunctie";
-};
+import { Address } from "../types/address";
 
 const fetcher = (input: RequestInfo | URL, init?: RequestInit) =>
   fetch(input, init).then((res) => res.json());
