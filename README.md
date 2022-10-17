@@ -28,7 +28,7 @@ Possible improvements which I would love to do, but didn't have time for in the 
 - Make the design compatible with mobile devices.
 - Make the address suggestion dropdown usable with keyboard.
 - Improve the accessability of the whole app.
-- Extract styled elements that appear more than once, into their own component.
+- Extract styled elements, that appear more than once, into their own component.
 - Finish styling of the savings and no-savings component.
 - Finish styling and functionality of the business step modal.
 - Implement loading and error states.
