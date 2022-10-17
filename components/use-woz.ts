@@ -3,8 +3,8 @@ import { useDebounce } from "usehooks-ts";
 import { Address } from "./use-address-lookup";
 
 type Data = {
-  woz: Number;
-  ewoz: Number;
+  woz: number;
+  ewoz: number;
 };
 
 export const useWoz = (address: Address | null) => {

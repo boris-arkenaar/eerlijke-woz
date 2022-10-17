@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import { FC, useContext, useEffect, useState } from "react";
 import { AppContext } from "./app-state";
-import Business from "./business";
 import { useWoz } from "./use-woz";
 
 const Confirmation: FC = () => {

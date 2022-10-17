@@ -4,7 +4,7 @@ import { AppContext } from "./app-state";
 import { Address, useAddressLookup } from "./use-address-lookup";
 
 const Address: FC = () => {
-  const { address, setAddress } = useContext(AppContext);
+  const { setAddress } = useContext(AppContext);
   const router = useRouter();
   const [value, setValue] = useState("");
   const { addresses, isLoading, isError } = useAddressLookup(value);
@@ -14,13 +14,8 @@ const Address: FC = () => {
   };
 
   const onAddressClick = (newAddress: Address) => () => {
-    console.log("address", newAddress);
     setAddress(newAddress);
     router.push("/confirmation");
-  };
-
-  const onNextClick = () => {
-    console.log("next");
   };
 
   return (
@@ -57,10 +52,7 @@ const Address: FC = () => {
             </div>
           )}
         </div>
-        <button
-          className="h-12 bg-sky-600 text-white rounded-md px-4 line-12 drop-shadow"
-          onClick={onNextClick}
-        >
+        <button className="h-12 bg-sky-600 text-white rounded-md px-4 line-12 drop-shadow">
           Volgende
         </button>
       </div>
