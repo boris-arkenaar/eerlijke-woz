@@ -15,7 +15,7 @@ const Container: FC<Props> = ({ children }) => {
     <div className="bg-sky-200 h-screen">
       <Header />
       <Steps />
-      <div className="grid justify-center space-20 mt-20 py-20">
+      <div className="grid justify-center mt-14 py-10">
         <div className="w-screen max-w-2xl bg-white border-2 border-gray-300 rounded-2xl drop-shadow-xl p-10">
           {children}
         </div>

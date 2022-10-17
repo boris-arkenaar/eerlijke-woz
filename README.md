@@ -23,8 +23,7 @@ Built with TypeScript, React and Next.js. Using Tailwind for quickly styling the
 Possible improvements which I would love to do, but didn't have time for in the scope of this exercise are listed below.
 
 - Use Emotion.js in combination with Tailwind for better readability.
-- Include SVG images for icons and logos.
-- Finish the header component.
+- Add support for svg images.
 - Make the steps component more generic and flexible, with visible state.
 - Make the design compatible with mobile devices.
 - Make the address suggestion dropdown usable with keyboard.
